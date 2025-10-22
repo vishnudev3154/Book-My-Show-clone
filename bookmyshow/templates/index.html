@@ -1,0 +1,344 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyShow Clone</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+    <div class="first_nav">
+        <nav>
+            <div class="logo">
+                <img src="https://in.bmscdn.com/bmsin/new/BMS_logo_new.png" alt="BookMyShow Logo" width="100px">
+            </div>
+
+            <form class="search-bar" action="/search" method="get">
+                <span class="material-symbols-outlined">search</span>
+                <input type="search" placeholder="Search for Movies, Events, Plays, Sports and Activities">
+            </form>
+
+            <div class="location">Kacheripady, Ernakulam</div>
+
+            <button class="signin-btn">Sign in</button>
+
+            <span class="material-symbols-outlined menu-icon">menu</span>
+        </nav>
+    </div>
+
+    <div class="second_nav">
+        <div class="left_menu">
+            <a href="#">Movies</a>
+            <a href="#">Stream</a>
+            <a href="#">Events</a>
+            <a href="#">Plays</a>
+            <a href="#">Sports</a>
+            <a href="#">Activities</a>
+        </div>
+
+        <div class="right_menu">
+            <a href="#">ListYourShow</a>
+            <a href="#">Corporates</a>
+            <a href="#">Offers</a>
+            <a href="#">Gift Cards</a>
+        </div>
+    </div>
+
+    <div class="rec">
+        <h1>Recommanded Movies</h1>
+
+
+
+        <div class="movie-grid">
+            <a href="#" class="movie">
+                <div class="movie-image">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MTMxSysgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end:l-text,ie-UFJPTU9URUQ%3D,co-FFFFFF,bg-DC354B,ff-Roboto,fs-20,lx-N16,ly-12,lfo-top_right,pa-12_14_12_14,r-6,l-end/et00447585-pfbqxwkcdx-portrait.jpg"
+                        alt="" width="150px" height="150px">
+                </div>
+                <div class="movie-name">Ek Deewanijat</div>
+                <div class="cat">commedy/mistroy/thrillor</div>
+            </a>
+
+            <a href="#" class="movie">
+                <div class="movie-image">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00377351-ctlsgzebdx-portrait.jpg"
+                        alt="" width="150px" height="150px">
+                </div>
+                <div class="movie-name">Kanthara:A Legend Chapter</div>
+                <div class="cat">Advanture/drama/thrillor</div>
+            </a>
+
+
+            <a href="#" class="movie">
+                <div class="movie-image">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00465248-anlqjpwusb-portrait.jpg"
+                        alt="" width="150px" height="150px">
+                </div>
+                <div class="movie-name">Pet Dectative</div>
+                <div class="cat">commedy/mistroy/thrillor</div>
+            </a>
+
+            <!-- <a href="#" class="movie">
+                <div class="movie-image">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00453094-keyqubedzf-portrait.jpg"
+                        alt="" width="150px" height="150px">
+                </div>
+                <div class="movie-name">Bahubali</div>
+                <div class="cat">commedy/mistroy/thrillor</div>
+            </a> -->
+
+
+            <a href="#" class="movie">
+                <div class="movie-image">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00445596-mlaapmpmgx-portrait.jpg"
+                        alt="" width="150px" height="150px">
+                </div>
+                <div class="movie-name">Dude</div>
+                <div class="cat">commedy/mistroy/thrillor</div>
+            </a>
+
+
+            <a href="#" class="movie">
+                <div class="movie-image">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00459410-sgyafwcvxz-portrait.jpg"
+                        alt="AirTag" width="100px" height="100">
+                </div>
+                <div class="movie-name">Balti</div>
+                <div class="cat">commedy/mistroy/thrillor</div>
+            </a>
+
+            <a href="#" class="movie">
+                <div class="movie-image">
+
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00462034-revrzskqtm-portrait.jpg"
+                        alt="" width="150px" height="150px">
+                </div>
+                <div class="movie-name">Bison</div>
+                <div class="cat">commedy/mistroy/thrillor</div>
+            </a>
+
+            <a href="#" class="movie">
+                <div class="movie-image">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00456016-ebbrjsyjsl-portrait.jpg"
+                        alt="" width="150px" height="150px">
+                </div>
+                <div class="movie-name">Lokah:Chapter 1 -Chandra</div>
+                <div class="cat">commedy/mistroy/thrillor</div>
+            </a>
+
+
+            <a href="#" class="movie">
+                <div class="movie-image">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00443268-btqvfuwbls-portrait.jpg"
+                        alt="" width="150px" height="10px">
+                </div>
+                <div class="movie-name">Thamma</div>
+                <div class="cat">commedy/mistroy/thrillor</div>
+            </a>
+
+        </div>
+
+
+    </div>
+    <div class="banner">
+        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/stream-leadin-web-collection-202210241242.png"
+            alt="" width="100%">
+    </div>
+
+
+    <div class="events">
+        <h2>The Best Of Live Events</h2>
+
+        <div class="event-grid">
+            <a href="#" class="movie">
+                <div class="event-image">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NCBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/theatre-shows-collection-202211140440.png"
+                        alt="" width="150px" height="150px">
+                </div>
+
+            </a>
+
+            <a href="#" class="movie">
+                <div class="event-image">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/kids-banner-desktop-collection-202503251132.png"
+                        alt="" width="150px" height="150px">
+                </div>
+
+            </a>
+            <a href="#" class="movie">
+                <div class="event-image">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/comedy-shows-collection-202211140440.png"
+                        alt="" width="150px" height="150px">
+                </div>
+
+            </a>
+            <a href="#" class="movie">
+                <div class="event-image">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:w-300/icc-womens-2025-best-of-live-events-collection-202508300121.png"
+                        alt="" width="150px" height="150px">
+                </div>
+
+            </a>
+            <a href="#" class="movie">
+                <div class="event-image">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NCBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/amusement-parks-banner-desktop-collection-202503251132.png"
+                        alt="" width="150px" height="150px">
+                </div>
+
+            </a>
+            <a href="#" class="movie">
+                <div class="event-image">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NCBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/theatre-shows-collection-202211140440.png"
+                        alt="" width="150px" height="150px">
+                </div>
+
+            </a>
+            <a href="#" class="movie">
+                <div class="event-image">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NCBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/theatre-shows-collection-202211140440.png"
+                        alt="" width="150px" height="150px">
+                </div>
+
+            </a>
+
+
+        </div>
+
+        <div class="prim">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/premiere-banner-web-collection-202208191200.png"
+                alt="" width="100%">
+
+
+            <p class="prime">premieres</p>
+            <p>Brand new releases every Rriday</p>
+
+            <div class="movie-grid">
+                <a href="#" class="movie">
+                    <div class="movie-image">
+                        <img src="Screenshot 2025-10-20 015222.png"
+                            alt="" width="150px" height="150px">
+                    </div>
+                    <div class="prim-name">Guardians of the Formula</div>
+         
+                </a>
+
+                <a href="#" class="movie">
+                    <div class="movie-image">
+    <img src="2.png" alt="">
+                    </div>
+                    <div class="prim-name">Aakhri Safare</div>
+
+                </a>
+
+                <a href="#" class="movie">
+                    <div class="movie-image">
+                      <img src="3.png" alt="">
+                    </div>
+                    <div class="prim-name">Vacances Forcees</div>
+                 
+                </a>
+
+                <a href="#" class="movie">
+                    <div class="movie-image">
+                      <img src="4.png" alt="">
+                    </div>
+                    <div class="prim-name">Jester 2</div>
+                  
+                </a>
+
+            </div>
+
+        </div>
+
+
+<h2>Trending Searches Rigth Now</h2>
+<div class="trendingSearchesrn">
+    <div class="movie-card">
+        <p class="title">Dude</p>
+        <p class="category">Movies</p>
+    </div>
+    <div class="movie-card">
+        <p class="title">Kanthara:A Legend Chapter</p>
+        <p class="category">Movies</p>
+    </div>
+    <div class="movie-card">
+        <p class="title">Ravana prabhu</p>
+        <p class="category">Movies</p>
+    </div>
+    <div class="movie-card">
+        <p class="title">The Pet Detective</p>
+        <p class="category">Movies</p>
+    </div>
+    <div class="movie-card">
+        <p class="title">Lokah:Chapter 1 -Chandra</p>
+        <p class="category">Movies</p>
+    </div>
+    <div class="movie-card">
+        <p class="title">Bison Kaalamaadan</p>
+        <p class="category">Movies</p>
+    </div>
+    <div class="movie-card">
+        <p class="title">Balti</p>
+        <p class="category">Movies</p>
+    </div>
+</div>
+
+
+
+
+    <div class="end">
+    <div class="end-top">
+        <img src="tentend.PNG" alt="Tent" class="tent-logo">
+        <div class="end-info">
+            <p ><b>List Your Shows</b>
+          
+                  Got a show, event, activity or a great experience? Partner with us and get listed on BookMyShow.
+            </p>
+        </div>
+        <button id="contactbtn">Contact today!</button>
+    </div>
+
+    <img src="lastss.PNG" alt="Last" class="last-banner">
+
+    <div class="footer-details">
+        <p class="lastpara">MOVIES NOW SHOWING IN BENGALURU</p>
+        <p class="lastinfo">Madharaasi | The Conjuring: Last Rites | Ghaati | Baaghi 4 | Lokah: Chapter 1 - Chandra | Elumale | Param Sundari | Su From So | Mahavatar Narsimha | The Bengal Files</p>
+        <p class="lastpara">UPCOMING MOVIES IN BENGALURU</p>
+        <p class="lastinfo">Jhor | Tinchari Mai: The Untold Story | Humans In The Loop | Nungshibeine Nungshimaneibi 3 | Dil Madharaasi | Nankhatai | Mangalsana | Devi - Ek Pretmanobir Panchali | Mehar | College Campus</p>
+        <p class="lastpara">MOVIES BY GENRE</p>
+        <p class="lastinfo">Drama Movies | Thriller Movies | Action Movies | Comedy Movies | Romantic Movies | Horror Movies | Suspense Movies | Crime Movies | Musical Movies | Sports Movies</p>
+        <p class="lastpara">MOVIES BY LANGUAGE</p>
+        <p class="lastinfo">Movies in Kannada | Movies in English | Movies in Hindi | Movies in Telugu | Movies in Tamil | Movies in Malayalam | Movies in Bengali | Movies in Konkani | Movies in Portuguese | Movies in Khasi</p>
+        <p class="lastpara">SPORTS EVENTS IN BENGALURU</p>
+        <p class="lastinfo">Running | Chess | Cycling | Horse Race | Kabaddi | Baseball | Cricket | Boat Race | Archery | Bowling</p>
+        <p class="lastpara">EVENTS IN TOP CITIES</p>
+        <p class="lastinfo">Events in Mumbai | Events in Delhi-NCR | Events in Chennai | Events in Bengaluru | Events in Hyderabad | Events in Pune | Events in Ahmedabad | Events in Kolkata | Events in Kochi</p>
+        <p class="lastpara">CINEMAS IN TOP CITIES</p>
+        <p class="lastinfo">Cinemas in Mumbai | Cinemas in Delhi-NCR | Cinemas in Chennai | Cinemas in Bengaluru | Cinemas in Hyderabad | Cinemas in Pune | Cinemas in Ahmedabad | Cinemas in Kolkata | Cinemas in Kochi</p>
+        <p class="lastpara">PLAYS IN TOP CITIES</p>
+        <p class="lastinfo">Plays in Mumbai | Plays in Delhi-NCR | Plays in Chennai | Plays in Bengaluru | Plays in Hyderabad | Plays in Pune | Plays in Ahmedabad | Plays in Kolkata | Plays in Kochi</p>
+        <p class="lastpara">ACTIVITIES IN TOP CITIES</p>
+        <p class="lastinfo">Activities in Mumbai | Activities in Delhi-NCR | Activities in Chennai | Activities in Bengaluru | Activities in Hyderabad | Activities in Pune | Activities in Ahmedabad | Activities in Kolkata | Activities in Kochi</p>
+        <p class="lastpara">MOVIES NOW SHOWING</p>
+        <p class="lastinfo">Baaghi 4 | The Conjuring: Last Rites | Param Sundari | Madharaasi | Ghaati | Kotha Lokah: Chapter 1 - Chandra | Lokah: Chapter 1 - Chandra | Vash Level 2 | Adventure of Jetcat 7D - Combo | Roller Coaster 7D - Combo</p>
+        <p class="lastpara">COUNTRIES</p>
+        <p class="lastinfo">Indonesia | Singapore | Sri Lanka | West Indies</p>
+        <p class="lastpara">HELP</p>
+        <p class="lastinfo">About Us | Contact Us | Current Opening | Press Release | Press Coverage | Sitemap | FAQs | Terms and Conditions | Privacy Policy</p>
+        <p class="lastpara">BOOKMYSHOW EXCLUSIVES</p>
+        <p class="lastinfo">Lollapalooza India | BookAChange | Corporate Vouchers | Gift Cards | List My Show | Offers | Stream | Trailers</p>
+    </div>
+
+    <hr>
+    <img src="lastone.PNG" alt="lastinfo" class="TheEnd">
+</div>
+</body>
+
+</html>
